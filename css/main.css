@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to left, #4c0033, #69585b);
+  font-family: "Manjari", sans-serif;
+}
+
+.title h1 {
+  padding: 20px;
+  text-align: center;
+  font-size: 2.9em;
+  text-transform: uppercase;
+}
+
+#animate__fadeIn {
+  animation-duration: 2s;
+}
+
+#textContact {
+  color: white;
+}
+
+#navegador ul {
+  list-style-type: none;
+  text-align: center;
+}
+#navegador li {
+  display: inline;
+  text-align: center;
+  margin: 0 10px 0 0;
+}
+#navegador li a {
+  padding: 2px 7px 2px 7px;
+  color: #666;
+  background-color: #eeeeee;
+  border: 1px solid #ccc;
+  text-decoration: none;
+}
+#navegador li a:hover {
+  background-color: #333333;
+  color: #ffffff;
+  border-radius: 9px;
+}
+
+.container {
+  background: transparent;
+  width: 90%;
+  max-width: 1000px;
+  margin: 1.6em auto;
+
+  display: grid;
+  gap: 1.6em;
+  grid-template-columns: repeat(5, 1fr);
+  } 
+
+.container > .header,
+.container > .content,
+.container > .sidebar,
+.container > .footer,
+.container > .relapost,
+.container > .div {
+  border-radius: 9px;
+  background: #7f0033;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.container .header,
+.container .footer {
+  grid-column: 1/6;
+  background-color: #4c0033;
+  color: white;
+  border-radius: 9px;
+}
+
+.container > .content {
+  grid-column: span 3;
+}
+
+.content > .section {
+  background: #b29498;
+  padding: 20px;
+  margin-top: 5px;
+  color: black;
+  border-radius: 9px;
+}
+
+.content .section h1,
+.content .section p {
+  padding: 10px;
+}
+
+.container .sidebar img {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.container > .sidebar {
+  grid-column: span 2;
+  background: #7f0033;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 9px;
+}
+
+.container > .relapost {
+  background: #4c0033;
+  color: white;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+  border-radius: 9px;
+}
+
+.container > .relapost:hover {
+  cursor: pointer;
+  color: #000000;
+  background: #ffffff;
+}
+
+@media screen and (max-width: 360px) {
+    
+  .container {
+    background: transparent;
+    width: auto;
+    max-width: auto;
+    margin: 1.6em auto;
+  
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(5, 1fr);
+    } 
+
+  .header {
+      text-align: center;
+    }
+  
+    .container .content {
+      grid-column: 1/ -1;
+      
+    }
+    .container .sidebar {
+      display: none;
+    }
+
+   
+}
+
+
