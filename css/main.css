@@ -150,8 +150,32 @@ body {
     .container .sidebar {
       display: none;
     }
+}
 
-   
+@media screen and (min-width: 375px) {
+
+  .container {
+    background: transparent;
+    width: auto;
+    max-width: auto;
+    margin: 1.6em auto;
+
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .container .content {
+    grid-column: 1/ -1;
+  }
+
+  .cotainer .sidebar {
+    display: none;
+  }
 }
 
 
