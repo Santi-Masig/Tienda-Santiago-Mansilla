@@ -85,6 +85,11 @@ body {
   grid-column: span 3;
 }
 
+.articlePregun {
+  color: white;
+  text-align: center;
+}
+
 .content > .section {
   background: #b29498;
   padding: 20px;
