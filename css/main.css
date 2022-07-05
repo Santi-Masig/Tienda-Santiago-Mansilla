@@ -56,6 +56,11 @@ body {
   grid-template-columns: repeat(5, 1fr);
   } 
 
+.content img {
+  width: 90%;
+  height: auto;
+}
+
 .container > .header,
 .container > .content,
 .container > .sidebar,
@@ -124,6 +129,14 @@ body {
   cursor: pointer;
   color: #000000;
   background: #ffffff;
+}
+
+#sectionIphone {
+  background: #b29498;
+  padding: 20px;
+  margin-top: 5px;
+  color: black;
+  border-radius: 9px;
 }
 
 @media screen and (max-width: 375px) {
